@@ -26,42 +26,57 @@ document.querySelector('#search-btn').onclick = () => {
 
 }
 
-//-- Removemos el active cuando movemos el scroll --//
+//-- Removemos el active cuando movemos el scroll  -- \\
 window.onscroll = () => {
     navbar.classList.remove('active');
     loginForm.classList.remove('active');
     searchForm.classList.remove('active');
 }
 
-
 //-- Cambiamos el tema de la pagina de claro a oscuro --//
 let themeBtn = document.querySelector('#theme-btn');
+
+//-- Agrego un alerta flotante cuando cambio el tema -- \\
+themeBtn.addEventListener('click', alerta);
+function alerta() {
+    Toastify({
+        text: 'Se cambio el tema',
+        duration: 1000,
+        newWindows: false,
+        stopOnFocus: true,
+        gravity: 'bottom',
+        position: 'right',
+        style: {
+            background: "rgb(242,179,193)",
+            background: "linear-gradient(45deg, rgba(242,179,193,1) 0%, rgba(219,120,142,1) 0%, rgba(91,24,39,1) 10%, rgba(249,135,160,1) 89%, rgba(219,184,189,1) 98%, rgba(33,33,34,1) 100%)"
+            
+        },
+    }).showToast();
+}
 
 themeBtn.addEventListener('click', () => {
     document.body.classList.toggle('dark');
     themeBtn.classList.toggle('fa-moon');
 
-    //-- Theme con localstorage --//
-    //-- Guardamos el modo en localstorage --//
+    //-- Theme con localstorage  -- \\
+    //-- Guardamos el modo en localstorage -- \\
     document.body.classList.contains('dark') ? localStorage.setItem('dark-mode', 'true') : localStorage.setItem('dark-mode', 'false');
-
 });
-
-//-- Obetenemos modo actual. --//
+//-- Obetenemos modo actual.  -- \\
 localStorage.getItem('dark-mode') === 'true' ? document.body.classList.toggle('dark') : document.body.classList.remove('dark');
 
-//-- Delay de las imagenes cuando cargan --//
+//-- Delay de las imagenes cuando cargan  -- \\
 AOS.init({
     duration: 800,
     delay: 300,
 });
 
 
-//-- Llamada desde el archivo JSON --//
+//-- Llamada desde el archivo JSON  -- \\
 const destinos = "./js/destino.json";
 const contenedorDestinos = document.getElementById('contenedorDestinos');
 
-//-- Incio del programa --//
+//-- Incio del programa  -- \\
 fetch(destinos)
     .then(response => response.json())
     .then(data => {
@@ -86,7 +101,7 @@ fetch(destinos)
     });
 
 
-// -- Cargamos contenedor servicios.
+// -- Cargamos contenedor servicios.  -- \\
 const contenedorServicios = document.getElementById('contenedorServicios');
 const servicio = [
     {
