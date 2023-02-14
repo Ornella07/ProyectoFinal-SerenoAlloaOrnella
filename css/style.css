@@ -1,0 +1,597 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,500;1,100;1,200&display=swap");
+
+:root {
+  --principal: #cb9d83;
+  --color-texto-1: #444;
+  --color-texto-2: #666;
+  --bg-texto-1: #fff;
+  --bg-texto-2: #eee;
+  --box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.1);
+}
+* {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  text-transform: capitalize;
+  transition: all 0.2s linear;
+}
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+  scroll-padding-top: 7rem;
+  scroll-behavior: smooth;
+}
+
+html::-webkit-scrollbar {
+  width: 0.8rem;
+}
+
+html::-webkit-scrollbar-track {
+  background: transparent;
+}
+html::-webkit-scrollbar-thumb {
+  background: var(--);
+  border-radius: 0.5rem;
+}
+
+body {
+  background: var(--bg-texto-2);
+  /* background-image: url(/images/fondo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover; */
+}
+body.dark {
+  --color-texto-1: #fff;
+  --color-texto-2: #eee;
+  --bg-texto-1: #333;
+  --bg-texto-2: #222;
+  --box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.4);
+}
+
+.heading {
+  text-align: center;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  color: var(--color-texto-1);
+  font-size: 4rem;
+}
+.heading span {
+  position: relative;
+  z-index: 0;
+}
+ 
+
+.btn {
+  margin-top: 2.5rem;
+  display: inline-block;
+  padding: 0.8rem 3rem;
+  font-size: 1.7rem;
+  color: #fff;
+  background: var(--principal);
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+.btn:hover {
+  letter-spacing: 0.2rem;
+}
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: var(--bg-texto-1);
+  box-shadow: var(--box-shadow);
+  padding: 1.5rem 7%;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header .logo {
+  font-weight: bold;
+  font-size: 2.5rem;
+  color: var(--color-texto-1);
+}
+.header .logo i {
+  color: var(--principal);
+  padding: 1rem;
+}
+.header .search-form {
+  background: var(--bg-texto-2);
+  border-radius: 0.5rem;
+  display: flex;
+  align-items: center;
+  height: 4.5rem;
+  width: 50rem;
+}
+
+.header .search-form input {
+  height: 100%;
+  width: 100%;
+  background: none;
+  text-transform: none;
+  font-size: 1.5rem;
+  color: var(--color-texto-1);
+  padding: 1rem;
+}
+.header .search-form label {
+  font-size: 2rem;
+  margin-right: 1.5rem;
+  color: var(--color-texto-1);
+  cursor: pointer;
+}
+.header .search-form label:hover {
+  color: var(--principal);
+}
+
+.header .icons div {
+  height: 4.5rem;
+  width: 4.5rem;
+  line-height: 4.5rem;
+  font-size: 2rem;
+  border-radius: 0.5rem;
+  margin-left: 0.5rem;
+  background: var(--bg-texto-2);
+  color: var(--bg-texto-1);
+  cursor: pointer;
+  text-align: center;
+}
+.header .icons div:hover {
+  color: #fff;
+  background: var(--principal);
+}
+
+#search-btn {
+  display: none;
+}
+.header .navbar {
+  position: absolute;
+  top: 115%;
+  right: 7%;
+  background: var(--bg-texto-1);
+  border-radius: 0.5rem;
+  box-shadow: var(--box-shadow);
+  width: 25rem;
+  transform: scale(0);
+  transform-origin: top right;
+}
+.header .navbar.active {
+  transform: scale(1); /*Activamos y desactivamos el menu con js*/
+}
+.header .navbar a {
+  display: block;
+  margin: 1rem;
+  padding: 1rem;
+  font-size: 1.5rem;
+  color: var(--color-texto-1);
+  border-radius: 0.5rem;
+}
+.header .navbar a:hover {
+  color: var(--principal);
+  background: var(--bg-texto-2);
+  padding-left: 2rem;
+}
+
+.header .login-form {
+  position: absolute;
+  top: 115%;
+  right: 7%;
+  background: var(--bg-texto-1);
+  border-radius: 0.5rem;
+  box-shadow: var(--box-shadow);
+  width: 35rem;
+  padding: 2rem;
+  transform: scale(0);
+  transform-origin: top right;
+}
+.header .login-form.active {
+  transform: scale(1); /*Activamos y desactivamos el login con JS*/
+}
+
+.header .login-form .inputBox {
+  margin-bottom: 1rem;
+}
+.header .login-form .inputBox span {
+  font-size: 1.7rem;
+  color: var(--color-texto-2);
+}
+.header .login-form .inputBox input {
+  font-size: 1.5rem;
+  color: var(--color-texto-1);
+  border-radius: 0.5rem;
+  padding: 1rem;
+  background: var(--bg-texto-2);
+  width: 100%;
+  text-transform: none;
+}
+.header .login-form .remember {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 0;
+}
+.header .login-form .remember label {
+  color: var(--color-texto-2);
+  font-size: 1.5rem;
+}
+.header .login-form .btn {
+  width: 100%;
+}
+.home {
+  position: relative;
+  display: inline-block;
+  text-align: center;
+}
+.home .image {
+  flex: 1 1 45rem;
+}
+
+.home .image img {
+  width: 100%;
+}
+.home .content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: var(--bg-texto-2);
+}
+.home .content h3 {
+  font-size: 3rem;
+  color: var(--principal);
+}
+.home .content p {
+  font-size: 2rem;
+  line-height: 1.7;
+}
+
+.form-container form {
+  background: var(--bg-texto-1);
+  box-shadow: var(--box-shadow);
+  border-radius: 0.5rem;
+  padding: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  align-items: center;
+}
+
+.form-container form .inputBox {
+  flex: 1 1 23rem;
+}
+
+.form-container form .inputBox span {
+  font-size: 1.7rem;
+  color: var(--color-texto-2);
+}
+
+.form-container form .inputBox input {
+  font-size: 1.5rem;
+  color: var(--color-texto-1);
+  background: var(--bg-texto-2);
+  border-radius: 0.5rem;
+  margin: 0.5rem 0;
+  text-transform: none;
+  width: 100%;
+  padding: 1rem;
+}
+
+.form-container form .btn {
+  flex: 1 1 23rem;
+}
+
+/* Paquetes */
+
+.packages .boxContainer {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(35rem, 1fr));
+  gap: 1.5rem;
+}
+
+.packages .boxContainer .box {
+  background: var(--bg-texto-1);
+  border-radius: 0.5rem;
+  box-shadow: var(--box-shadow);
+}
+
+.packages .boxContainer .box .image {
+  height: 25rem;
+  width: 100%;
+  padding: 1.5rem;
+  position: relative;
+}
+.packages .boxContainer .box .image img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 0.5rem;
+}
+
+.packages .boxContainer .box .image h3 {
+  position: absolute;
+  top: 2.5rem;
+  left: 2.5rem;
+  font-size: 2rem;
+  color: #fff;
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 0.5rem;
+  font-weight: lighter;
+  padding: 0.5rem 1.5rem;
+}
+
+.packages .boxContainer .box .image h3 i {
+  color: var(--principal);
+  padding: 0.5rem;
+}
+
+.packages .boxContainer .box .content {
+  padding: 1.5rem;
+  padding-top: 0;
+}
+
+.packages .boxContainer .box .content .precio {
+  font-weight: 600;
+  color: var(--color-texto-1);
+  font-size: 2.5rem;
+}
+
+.packages .boxContainer .box .content .precio span {
+  font-weight: lighter;
+  color: var(--color-texto-2);
+  font-size: 1.5rem;
+  text-decoration: line-through;
+}
+
+.packages .boxContainer .box .content p {
+  font-size: 1.2rem;
+  padding: 0.5rem 0;
+  color: var(--color-texto-2);
+  line-height: 1.7;
+}
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Destinos */
+.destinos .boxContainer {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(35rem, 1fr));
+  gap: 1.5rem;
+}
+.destinos .boxContainer .box {
+  background: var(--bg-texto-1);
+  border-radius: 0.5rem;
+  box-shadow: var(--box-shadow);
+}
+.destinos .boxContainer .box .image {
+  height: 25rem;
+  width: 100%;
+  padding: 1.5rem;
+  position: relative;
+}
+.destinos .boxContainer .box .image img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 0.5rem;
+}
+.destinos .boxContainer .box .image h3 i {
+  color: var(--principal);
+  padding: 0.5rem;
+}
+.destinos .boxContainer .box .content {
+  padding: 2.5rem;
+  padding-top: 0;
+  font-size: 1.5rem;
+  
+}
+
+
+.destinos .boxContainer .box .content p {
+  font-size: 1.5rem;
+  padding: 0.5rem 0;
+  color: var(--color-texto-2);
+  line-height: 1.7;
+}
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Servicios */
+.service .boxContainer {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(35rem, 1fr));
+  gap: 1.5rem;
+}
+.service .boxContainer .box {
+  background: var(--bg-texto-1);
+  border-radius: 0.5rem;
+  box-shadow: var(--box-shadow);
+  position: relative;
+  padding: 2rem;
+}
+
+.service .boxContainer .box span {
+  position: absolute;
+  top: 0.5rem;
+  right: 2rem;
+  color: var(--color-texto-2);
+  font-weight: bolder;
+  font-size: 5rem;
+}
+.service .boxContainer .box i {
+  height: 6rem;
+  width: 6rem;
+  line-height: 6rem;
+  text-align: center;
+  font-size: 2.5rem;
+  color: #fff;
+  background: var(--principal);
+  border-radius: 50%;
+  margin-bottom: 0.5rem;
+}
+.service .boxContainer .box h3 {
+  color: var(--color-texto-1);
+  font-size: 2.3rem;
+  padding: 0.7rem 0;
+}
+.service .boxContainer .box p {
+  color: var(--color-texto-2);
+  font-size: 1.5rem;
+  line-height: 1.8;
+}
+.contact form {
+  max-width: 70rem;
+  margin: 0 auto;
+  text-align: center;
+}
+.contact form .inputBox {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.contact form textarea,
+.contact form .inputBox input {
+  width: 100%;
+  padding: 1rem;
+  font-size: 1.6rem;
+  color: var(--color-texto-1);
+  margin: 0.7rem 0;
+  background: var(--bg-texto-1);
+  box-shadow: var(--box-shadow);
+  text-transform: none;
+  border-radius: 0.5rem;
+}
+.contact form textarea {
+  height: 20rem;
+  resize: none;
+}
+.contact form .inputBox input {
+  width: 49%;
+}
+
+.footer {
+  background: var(--bg-texto-2);
+}
+
+.footer .boxContainer {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+  gap: 1.5rem;
+}
+.footer .boxContainer h3 {
+  font-size: 2.5rem;
+  color: var(--color-texto-1);
+  padding: 1rem 0;
+  text-align: center;
+}
+
+.footer .boxContainer a {
+  display: block;
+  font-size: 1.5rem;
+  color: var(--color-texto-2);
+  padding: 1rem 0;
+  margin: 3rem;
+}
+.footer .boxContainer a i {
+  padding-right: 0.5rem;
+  color: var(--principal);
+}
+.footer .boxContainer a:hover i {
+  padding-right: 2rem;
+}
+.footer .credit {
+  font-size: 1.3rem;
+  text-align: center;
+  border-top: 0.1rem solid var(--color-texto-2);
+  padding: 1rem;
+  padding-bottom: 2rem;
+  margin-top: 2rem;
+  color: var(--color-texto-2);
+}
+.footer .credit span {
+  color: var(--principal);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Media Queries */
+@media (max-width: 991px) {
+  html {
+    font-size: 55%;
+  }
+  .header {
+    padding: 1.5rem 2rem;
+  }
+  section {
+    padding: 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .header .navbar {
+    right: 2rem;
+  }
+  .header {
+    padding: 1.5rem 2rem;
+  }
+  .header .navbar {
+    right: 2rem;
+  }
+  .header .login-form {
+    right: 2rem;
+  }
+  #search-btn {
+    display: inline-block;
+  }
+  .header .search-form {
+    position: absolute;
+    top: 115%;
+    right: 2rem;
+    background: var(--bg-texto-1);
+    border-radius: 0.5rem;
+    width: 90%;
+    box-shadow: var(--box-shadow);
+    transform: scale(0);
+    transform-origin: top right;
+  }
+  .header .search-form.active {
+    transform: scale(1); /*Lo activamos con JS*/
+  }
+}
+
+@media (max-width: 450px) {
+  html {
+    font-size: 50%;
+  }
+  .contact form .inputBox input {
+    width: 100%;
+  }
+}

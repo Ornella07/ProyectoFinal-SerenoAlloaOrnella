@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RocTravel</title>
+    <link rel="icon" href="images/logito.ico" />
+    <!-- Css -->
+    <link rel="stylesheet" href="../../css/style.css">
+    <!--Fonts Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+
+<body>
+    <!-- Inicio Seccion Header -->
+    <header class="header">
+        <a href="/index.html" class="logo"><i class="fas fa-paper-plane"></i>RocViajes</a>
+        <form action="" class="search-form">
+            <input type="search" name="" placeholder="Busque Aqui..." id="searchBox">
+            <label for="searchBox" class="fas fa-search"></label>
+        </form>
+
+        <div class="icons">
+            <div class="fas fa-search" id="search-btn"></div>
+            <div class="fas fa-sun" id="theme-btn"></div>
+            <div class="fas fa-user" id="login-btn"></div>
+            <div class="fas fa-bars" id="menu-btn"></div>
+        </div>
+
+        <nav class="navbar">
+            <a href="../../index.html">Inicio</a>
+            
+        </nav>
+
+        <form action="" class="login-form">
+            <div class="inputBox">
+                <span>Nombre</span>
+                <input type="text" placeholder="Ingrese su nombre">
+            </div>
+
+            <div class="inputBox">
+                <span>Contraseña</span>
+                <input type="password" placeholder="Ingrese su contraseña">
+            </div>
+            <div class="remember">
+                <input type="checkbox" name="" id="login-remember">
+                <label for="login-remember">Recordame</label>
+            </div>
+            <input type="submit" class="btn" value="enviar">
+        </form>
+    </header>
+    <!-- Cierre seccion header -->
+
+    <!-- Inicio Seccion Home -->
+    <section class="home" id="home">
+        <div class="image">
+            <img src="images/logo.png" alt="">
+        </div>
+        <div class="content">
+            <h3>la aventura vale la pena!</h3>
+            <p>te llevamos a donde quieras.</p>
+            <a href="#packages" class="btn">explore</a>
+        </div>
+    </section>
+
+    <!-- Cierre Seccion Home -->
+
+    <!-- Inicio Seccion formulario de filtro -->
+
+    <section class="form-container">
+        <form action="">
+            <div class="inputBox">
+                <span>Donde Vas?</span>
+                <input type="text" placeholder="Buscar lugares">
+            </div>
+
+            <div class="inputBox">
+                <span>Salida</span>
+                <input type="date">
+            </div>
+
+            <div class="inputBox">
+                <span>Regreso</span>
+                <input type="date">
+            </div>
+            <input type="submit" value="Reserva Ahora" class="btn">
+        </form>
+    </section>
+
+
+    <!-- Cierre seccion formulario de filtro -->
+
+    <!-- Inicio Seccion paquetes -->
+    <section class="packages" id="packages">
+        <h1 class="heading">Nuestros <span>Paquetes</span></h1>
+        <div class="boxContainer">
+
+            <div class="box" data-aos="fade-up">
+                <div class="image">
+                    <img src="images/belgica.jpg" alt="Belgica">
+                    <h3><i class="fas fa-map-marker-alt"></i>Belgica</h3>
+                </div>
+                <div class="content">
+                    <div class="precio">U$3000 <span>U$5000</span></div>
+                    <p>Conocido por sus ciudades medievales, su arquitectura renacentista. Veni a conocer el Grand
+                        Palace, el Palacio Real de Bruselas, Brujas y mucho más. </p>
+                    <a href="#" class="btn">Reservar Ahora </a>
+                </div>
+            </div>
+
+            <div class="box" data-aos="fade-up">
+                <div class="image">
+                    <img src="images/berlin.jpg" alt="Berlin">
+                    <h3><i class="fas fa-map-marker-alt"></i>Berlin</h3>
+                </div>
+                <div class="content">
+                    <div class="precio">U$3500 <span>U$4500</span></div>
+                    <p>Veni a conocer Berlin, su muro, la puerta de Brandeburgo, el palacio de Charlottenburg, la
+                        Catedral de Berlin, y muchos atractivos más. </p>
+                    <a href="#" class="btn">Reservar Ahora </a>
+                </div>
+            </div>
+
+            <div class="box" data-aos="fade-up">
+                <div class="image">
+                    <img src="images/coliseo.jpg" alt="Coliseo Romano">
+                    <h3><i class="fas fa-map-marker-alt"></i>Roma</h3>
+                </div>
+                <div class="content">
+                    <div class="precio">U$4000 <span>U$5000</span></div>
+                    <p>Veni a conocer Roma, no podes perderte sus atractivos como El Coliseo Romano, la Fontana Di
+                        Trevi, sus museos o el Vaticano. </p>
+                    <a href="#" class="btn">Reservar Ahora </a>
+                </div>
+            </div>
+
+            <div class="box" data-aos="fade-up">
+                <div class="image">
+                    <img src="images/londres.jpg" alt="Londres">
+                    <h3><i class="fas fa-map-marker-alt"></i>Londres</h3>
+                </div>
+                <div class="content">
+                    <div class="precio">U$3400 </div>
+                    <p> Veni a conocer Londres y maravillate con todo lo que tiene para ofrecerte, sus noches, su
+                        historia, sus calles, su gente...</p>
+                    <a href="#" class="btn">Reservar Ahora </a>
+                </div>
+            </div>
+
+            <div class="box" data-aos="fade-up">
+                <div class="image">
+                    <img src="images/madrid.jpg" alt="España">
+                    <h3><i class="fas fa-map-marker-alt"></i>España</h3>
+                </div>
+                <div class="content">
+                    <div class="precio">U$2000 </div>
+                    <p>Veni a conocer españa y sus hermosos lugares, Madrid, Cataluña, Galicia, Asturias. El lugar que
+                        elijas te va a enamorar. </p>
+                    <a href="#" class="btn">Reservar Ahora </a>
+                </div>
+            </div>
+
+
+            <div class="box" data-aos="fade-up">
+                <div class="image">
+                    <img src="images/suiza.jpg" alt="Suiza">
+                    <h3><i class="fas fa-map-marker-alt"></i>Suiza</h3>
+                </div>
+                <div class="content">
+                    <div class="precio">U$3000</div>
+                    <p>No podes perderte este destino, Suiza tiene las vistas más maravillosas que te podes imaginar. No
+                        me crees? Veni a conocerlas! </p>
+                    <a href="#" class="btn">Reservar Ahora </a>
+                </div>
+            </div>
+
+            <div class="box" data-aos="fade-up">
+                <div class="image">
+                    <img src="images/torre.jpg" alt="Torre Eiffel">
+                    <h3><i class="fas fa-map-marker-alt"></i>París</h3>
+                </div>
+                <div class="content">
+                    <div class="precio">U$3400</div>
+                    <p>No te pierdas sus museos, El Louvre, El Grand Palais, el castillo de Versalles, el Arco del
+                        Triunfo ni mucho menos, La torre Eiffel </p>
+                    <a href="#" class="btn">Reservar Ahora </a>
+                </div>
+            </div>
+
+
+
+        </div>
+    </section>
+
+    <!-- Cierre Seccion paquetes -->
+
+
+    <!-- Inicio Footer -->
+
+    <section class="footer">
+        <div class="boxContainer">
+            <div class="box">
+                <h3>Redes</h3>
+                <a href="https://www.linkedin.com/in/ornella-sereno-alloa-3ba644226/" target="
+                "><i class="fa-brands fa-linkedin"></i> Linkedin</a>
+                <a href="#"><i class="fa-brands fa-facebook"></i> Facebook</a>
+                <a href="#"><i class="fa-brands fa-twitter"></i> Twitter</a>
+            </div>
+            <div class="box">
+                <h3>Direccion</h3>
+                <a href="#"><i class="fa-sharp fa-solid fa-location-dot"></i>Rosario, Argentina</a>
+                <a href="#"><i class="fa-solid fa-phone"></i> Telefono</a>
+                <a href="#"><i class="fa-brands fa-whatsapp"></i> Whatsapp</a>
+            </div>
+        </div>
+
+
+        <div class="credit">Creado por <span>Ornella Sereno Alloa </span>- 2023 - Roc Viajes Copyright ©</div>
+    </section>
+
+
+    <!-- Cierre Footer -->
+
+    <!-- Script Aos -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"
+        integrity="sha512-A7AYk1fGKX6S2SsHywmPkrnzTZHrgiVT7GcQkLGDe2ev0aWb8zejytzS8wjo7PGEXKqJOrjQ4oORtnimIRZBtw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!-- Script -->
+    <script src="../../js/script.js"></script>
+
+
+
+    <script>
+        AOS.init({
+            duration: 800,
+            delay: 300
+        });
+    </script>
+</body>
+
+</html>
+
+
+
+<!-- Script -->
+<script src="js/script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RocTravel</title>
+    <link rel="icon" href="../../images/logito.ico" />
+    <!-- Css -->
+    <link rel="stylesheet" href="../../css/style.css">
+    <!--Fonts Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+
+<body>
+    <!-- Inicio Seccion Header -->
+    <header class="header">
+        <a href="/index.html" class="logo"><i class="fas fa-paper-plane"></i>RocViajes</a>
+        <form action="" class="search-form">
+            <input type="search" name="" placeholder="Busque Aqui..." id="searchBox">
+            <label for="searchBox" class="fas fa-search"></label>
+        </form>
+
+        <div class="icons">
+            <div class="fas fa-search" id="search-btn"></div>
+            <div class="fas fa-sun" id="theme-btn"></div>
+            <div class="fas fa-user" id="login-btn"></div>
+            <div class="fas fa-bars" id="menu-btn"></div>
+        </div>
+
+        <nav class="navbar">
+            <a href="../../index.html">Inicio</a>
+            
+        </nav>
+
+        <form action="" class="login-form">
+            <div class="inputBox">
+                <span>Nombre</span>
+                <input type="text" placeholder="Ingrese su nombre">
+            </div>
+
+            <div class="inputBox">
+                <span>Contraseña</span>
+                <input type="password" placeholder="Ingrese su contraseña">
+            </div>
+            <div class="remember">
+                <input type="checkbox" name="" id="login-remember">
+                <label for="login-remember">Recordame</label>
+            </div>
+            <input type="submit" class="btn" value="enviar">
+        </form>
+    </header>
+    <!-- Cierre seccion header -->
+
+    <!-- Inicio Seccion Home -->
+    <section class="home" id="home">
+        <div class="image">
+            <img src="images/logo.jpg" alt="">
+        </div>
+        <div class="content">
+            <h3>la aventura vale la pena!</h3>
+            <p>te llevamos a donde quieras.</p>
+            <a href="#packages" class="btn">explore</a>
+        </div>
+    </section>
+
+    <!-- Cierre Seccion Home -->
+
+    <!-- Inicio Seccion formulario de filtro -->
+
+    <section class="form-container">
+        <form action="">
+            <div class="inputBox">
+                <span>Donde Vas?</span>
+                <input type="text" placeholder="Buscar lugares">
+            </div>
+
+            <div class="inputBox">
+                <span>Salida</span>
+                <input type="date">
+            </div>
+
+            <div class="inputBox">
+                <span>Regreso</span>
+                <input type="date">
+            </div>
+            <input type="submit" value="Reserva Ahora" class="btn">
+        </form>
+    </section>
+
+
+    <!-- Cierre seccion formulario de filtro -->
+
+    <!-- Inicio Seccion paquetes -->
+    <section class="packages" id="packages">
+        <h1 class="heading">Nuestros <span>Paquetes</span></h1>
+        <div class="boxContainer">
+
+            <div class="box" data-aos="fade-up">
+                <div class="image">
+                    <img src="images/maceio.jpg" alt="Maceio">
+                    <h3><i class="fas fa-map-marker-alt"></i>Maceio</h3>
+                </div>
+                <div class="content">
+                    <div class="precio">$120.000 </div>
+                    <p>Su centro histórico alberga casas coloniales de colores pastel, una catedral del siglo XIX y el
+                        Museo Théo Brandão de Antropología y Folclore,</p>
+                    <a href="#" class="btn">Reservar Ahora </a>
+                </div>
+            </div>
+
+            <div class="box" data-aos="fade-up">
+                <div class="image">
+                    <img src="images/Arraial.jpg" alt="Arraial">
+                    <h3><i class="fas fa-map-marker-alt"></i>Arraial do Cabo</h3>
+                </div>
+                <div class="content">
+                    <div class="precio">$150.000</div>
+                    <p>Su aire descontracturado, su ritmo mucho tranquilo, sus playas cristalinas y sus vistas de
+                        postal, sus viajes en barcos, no podes perderte estas playas paradisiacas.</p>
+                    <a href="#" class="btn">Reservar Ahora </a>
+                </div>
+            </div>
+
+            <div class="box" data-aos="fade-up">
+                <div class="image">
+                    <img src="images/bombas.jpg" alt="Bombas">
+                    <h3><i class="fas fa-map-marker-alt"></i>Bombas</h3>
+                </div>
+                <div class="content">
+                    <div class="precio">$100.000 </div>
+                    <p>Su tranquilidad, sus playas, su conexion a Bombinhias por su nueva pasarela, sus comidas tipicas
+                        y su gente calida, eso y mucho más, te ofrece Bombas, Santa Catalina.</p>
+                    <a href="#" class="btn">Reservar Ahora </a>
+                </div>
+            </div>
+
+            <div class="box" data-aos="fade-up">
+                <div class="image">
+                    <img src="images/buzios.jpg" alt="Buzios">
+                    <h3><i class="fas fa-map-marker-alt"></i>Buzios</h3>
+                </div>
+                <div class="content">
+                    <div class="precio">$150.000 </div>
+                    <p>Centro turístico brasileño ubicado en una península en el océano, al este de Río de Janeiro. Es
+                        conocido como un lujoso destino vacacional con muchas playas.</p>
+                    <a href="#" class="btn">Reservar Ahora </a>
+                </div>
+            </div>
+
+            <div class="box" data-aos="fade-up">
+                <div class="image">
+                    <img src="images/natal.jpg" alt="Natal">
+                    <h3><i class="fas fa-map-marker-alt"></i>Natal</h3>
+                </div>
+                <div class="content">
+                    <div class="precio">$180.000</div>
+                    <p>Playas larguísimas y azules, casi tan azul como el cielo de Natal y es que ofrece un ambiente
+                        paradisíaco. Además presumen de tener las playas de Brasil más limpias, eso significa arena
+                        blanca y agua cristalina.Las playas de Natal también son famosas por los deportes acuáticos
+                        tales como el surf.</p>
+                    <a href="#" class="btn">Reservar Ahora </a>
+                </div>
+            </div>
+
+            <div class="box" data-aos="fade-up">
+                <div class="image">
+                    <img src="images/pipas.jpg" alt="Pipas">
+                    <h3><i class="fas fa-map-marker-alt"></i>Pipas</h3>
+                </div>
+                <div class="content">
+                    <div class="precio">$20.000 <span>$25.000</span></div>
+                    <p>Pipa es una pequeña localidad turística del noreste de Brasil, perteneciente al municipio de
+                        Tibau do Sul en el estado de Río Grande del Norte. Es famosa por sus extensas playas.</p>
+                    <a href="#" class="btn">Reservar Ahora </a>
+                </div>
+            </div>
+
+            <div class="box" data-aos="fade-up">
+                <div class="image">
+                    <img src="images/praia.jpg" alt="Praia">
+                    <h3><i class="fas fa-map-marker-alt"></i>Praia Do Forte</h3>
+                </div>
+                <div class="content">
+                    <div class="precio">$200.000</div>
+                    <p>Las playas de Praia do Forte son increíbles, muy bonitas, con arena blanca y agua turquesa, el
+                        típico postal de una playa paradisíaca, simplemente únicas. Otra de las cosas increíbles en las
+                        playas de Praia do Forte, es que en algunos puntos, vas a poder ver increíbles peces de colores
+                        como si estuvieras buceando, pero sin necesidad de bucear, de lo limpia que esta el agua vas a
+                        poder verlos a nado.</p>
+                    <a href="#" class="btn">Reservar Ahora </a>
+                </div>
+            </div>
+
+            <div class="box" data-aos="fade-up">
+                <div class="image">
+                    <img src="images/rio.jpg" alt="Rio de janeiro">
+                    <h3><i class="fas fa-map-marker-alt"></i>Rio De Janeiro</h3>
+                </div>
+                <div class="content">
+                    <div class="precio">$200.000 </div>
+                    <p>Con una gastronomía exquisita, cultura riquísima, algunas de las playas más lindas del mundo,
+                        cascadas deslumbrantes y aventuras para todos los gustos. Uno puede elegir el tipo de turismo
+                        que le encanta y sorprenderse con las maravillas de Brasil.</p>
+                    <a href="#" class="btn">Reservar Ahora </a>
+                </div>
+            </div>
+
+            <div class="box" data-aos="fade-up">
+                <div class="image">
+                    <img src="images/salvador.jpg" alt="Salvador">
+                    <h3><i class="fas fa-map-marker-alt"></i>Salvador de Bahia</h3>
+                </div>
+                <div class="content">
+                    <div class="precio">$200.000 </div>
+                    <p>Salvador de Bahia tiene una particularidad: hay playas que están bañadas por la Bahia de Todos
+                        los Santos mientras que otras por el océano Atlántico. Frente a esta fenómeno, hay playas para
+                        todos los gustos.</p>
+                    <a href="#" class="btn">Reservar Ahora </a>
+                </div>
+            </div>
+
+            <div class="box" data-aos="fade-up">
+                <div class="image">
+                    <img src="images/florianopolis.jpg" alt="Florianopolis">
+                    <h3><i class="fas fa-map-marker-alt"></i>Florianopolis</h3>
+                </div>
+                <div class="content">
+                    <div class="precio">$140.000</div>
+                    <p>Florianópolis es más que paisajes selváticos y un centro lleno de historia. Con 42 playas -las
+                        más populares son Jurerê y Canasvieras-, abandonar la arena será una tarea difícil, pero no
+                        imposible. Salí y caminá todo, el recorrido al Mercado Público tendrá su recompensa cuando
+                        pruebes sus sabores marinos. Seguí viaje y viví la inmensidad al ir al Morro da Cruz, vas a ver
+                        la isla y, ¡el continente!</p>
+                    <a href="#" class="btn">Reservar Ahora </a>
+                </div>
+            </div>
+
+            <div class="box" data-aos="fade-up">
+                <div class="image">
+                    <img src="images/taipu.jpg" alt="Taipu">
+                    <h3><i class="fas fa-map-marker-alt"></i>Taipu de Fora</h3>
+                </div>
+                <div class="content">
+                    <div class="precio">$210.000</div>
+                    <p>La playa de Taipu de Fora es considerada una de las más hermosas de Brasil porque tiene una
+                        piscina natural de un kilómetro de longitud con peces de todos los colores. Se encuentra en el
+                        Península de Maraú está en Costa de Dendê, al sur de Bahía, entre Morro de São Paulo e Itacaré.
+                    </p>
+                    <a href="#" class="btn">Reservar Ahora </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Inicio Footer -->
+
+    <section class="footer">
+        <div class="boxContainer">
+            <div class="box">
+                <h3>Redes</h3>
+                <a href="https://www.linkedin.com/in/ornella-sereno-alloa-3ba644226/" target="
+                "><i class="fa-brands fa-linkedin"></i> Linkedin</a>
+                <a href="#"><i class="fa-brands fa-facebook"></i> Facebook</a>
+                <a href="#"><i class="fa-brands fa-twitter"></i> Twitter</a>
+            </div>
+            <div class="box">
+                <h3>Direccion</h3>
+                <a href="#"><i class="fa-sharp fa-solid fa-location-dot"></i> Rosario, Argentina</a>
+                <a href="#"><i class="fa-solid fa-phone"></i> Telefono</a>
+                <a href="#"><i class="fa-brands fa-whatsapp"></i> Whatsapp</a>
+            </div>
+        </div>
+
+
+        <div class="credit">Creado por <span>Ornella Sereno Alloa </span>- 2023 - Roc Viajes Copyright ©</div>
+    </section>
+
+
+    <!-- Cierre Footer -->
+
+    <!-- Script Aos -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"
+        integrity="sha512-A7AYk1fGKX6S2SsHywmPkrnzTZHrgiVT7GcQkLGDe2ev0aWb8zejytzS8wjo7PGEXKqJOrjQ4oORtnimIRZBtw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!-- Script -->
+    <script src="../../js/script.js"></script>
+
+
+
+    <script>
+        AOS.init({
+            duration: 800,
+            delay: 300
+        });
+    </script>
+</body>
+
+</html>
+
+
+<!-- Script -->
+<script src="js/script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RocViajes</title>
+    <link rel="icon" href="images/logito.ico" />
+
+    <!-- AOS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
+        integrity="sha512-1cK78a1o+ht2JcaW6g8OXYwqpev9+6GqOkz9xmBN9iUUhIndKtxwILGWYOSibOKjLsEdjyjZvYDq/cZwNeak0w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Css -->
+    <link rel="stylesheet" href="css/style.css" />
+    <!--Fonts Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <!-- Inicio Seccion Header -->
+    <header class="header">
+        <a href="#" class="logo"><i class="fas fa-paper-plane"></i>RocViajes</a>
+        <form action="" class="search-form">
+            <input type="search" name="" placeholder="Busque Aqui..." id="searchBox" />
+            <label for="searchBox" class="fas fa-search btn-busqueda"></label>
+        </form>
+
+        <div class="icons">
+            <div class="fas fa-search" id="search-btn"></div>
+            <div class="fas fa-sun" id="theme-btn"></div>
+            <div class="fas fa-user" id="login-btn"></div>
+            <div class="fas fa-bars" id="menu-btn"></div>
+        </div>
+
+        <nav class="navbar">
+            <a href="#home">Inicio</a>
+            <a href="#packages">Paquetes</a>
+            <a href="#destinos">Destinos</a>
+            <a href="#service">Servicios</a>
+            <a href="#contact">Contacto</a>
+        </nav>
+
+        <form action="" class="login-form">
+            <div class="inputBox">
+                <span>Nombre</span>
+                <input type="text" placeholder="Ingrese su nombre" id="usuario" />
+            </div>
+            <div class="inputBox">
+                <span>Contraseña</span>
+                <input type="password" placeholder="Ingrese su contraseña" id="password" />
+            </div>
+            <div class="remember">
+                <input type="checkbox" name="" id="login-remember" />
+                <label for="login-remember">Recordame</label>
+            </div>
+            <input type="submit" class="btn" value="ingresar" />
+        </form>
+    </header>
+    <!-- Cierre seccion header -->
+
+    <!-- Inicio Seccion Home -->
+    <section class="home" id="home">
+        <div class="image" data-aos="fade-down">
+            <img src="images/logo.png" alt="" />
+        </div>
+        <div class="content">
+            <h3>la aventura vale la pena!</h3>
+            <p>te llevamos a donde quieras.</p>
+            <a href="#packages" class="btn">explore</a>
+        </div>
+    </section>
+
+    <!-- Cierre Seccion Home -->
+
+    <!-- Inicio Seccion formulario de filtro -->
+
+    <section class="form-container" data-aos="zoom-in">
+        <form action="">
+            <div class="inputBox">
+                <span>Donde Vas?</span>
+                <input type="text" placeholder="Buscar lugares" />
+            </div>
+
+            <div class="inputBox">
+                <span>Salida</span>
+                <input type="date" />
+            </div>
+
+            <div class="inputBox">
+                <span>Regreso</span>
+                <input type="date" />
+            </div>
+            <input type="submit" value="Reserva Ahora" class="btn" />
+        </form>
+    </section>
+
+    <!-- Cierre seccion formulario de filtro -->
+
+    <!-- Inicio Seccion paquetes -->
+    <section class="packages" id="packages">
+        <h1 class="heading">Nuestros <span>Paquetes</span></h1>
+        <div class="boxContainer">
+            <!-- Desde aca deberia completar con Js -->
+            <div class="box" data-aos="fade-up">
+                <div class="image">
+                    <img src="images/rionegro.jpg" alt="Rio negro" />
+                    <h3><i class="fas fa-map-marker-alt"></i>Rio Negro</h3>
+                </div>
+                <div class="content">
+                    <div class="precio">U$ 450 <span>U$560</span></div>
+                    <p>Veni a conocer Piedras Coloradas en Rio Negro..</p>
+                    <a href="#" class="btn">Reservar Ahora </a>
+                </div>
+            </div>
+
+            <div class="box" data-aos="fade-up">
+                <div class="image">
+                    <img src="images/brasil.jpg" alt="Brasil" />
+                    <h3><i class="fas fa-map-marker-alt"></i>Brasil</h3>
+                </div>
+                <div class="content">
+                    <div class="precio">U$ 650 <span>U$800</span></div>
+                    <p>Encontra el relax y diversion en las playas de Brasil</p>
+                    <a href="#" class="btn">Reservar Ahora </a>
+                </div>
+            </div>
+
+            <div class="box" data-aos="fade-up">
+                <div class="image">
+                    <img src="images/cancun.jpg" alt="Cancún" />
+                    <h3><i class="fas fa-map-marker-alt"></i>cancún</h3>
+                </div>
+                <div class="content">
+                    <div class="precio">U$ 1050 <span>U$1200</span></div>
+                    <p>
+                        Veni a Cancún y disfruta de su tranquilidad en las playas más
+                        lindas
+                    </p>
+                    <a href="#" class="btn">Reservar Ahora </a>
+                </div>
+            </div>
+
+            <div class="box" data-aos="fade-up">
+                <div class="image">
+                    <img src="images/colombia.jpg" alt="Colombia" />
+                    <h3><i class="fas fa-map-marker-alt"></i>Colombia</h3>
+                </div>
+                <div class="content">
+                    <div class="precio">U$ 850 <span>U$1100</span></div>
+                    <p>Encontra el relax y diversion en las playas de Colombia</p>
+                    <a href="#" class="btn">Reservar Ahora </a>
+                </div>
+            </div>
+
+            <div class="box" data-aos="fade-up">
+                <div class="image">
+                    <img src="images/hawaii.jpg" alt="hawaii" />
+                    <h3><i class="fas fa-map-marker-alt"></i>Hawaii</h3>
+                </div>
+                <div class="content">
+                    <div class="precio">U$ 1850 <span>U$2100</span></div>
+                    <p>Las playas mas paradisiacas las encontras acá, en Hawaii..</p>
+                    <a href="#" class="btn">Reservar Ahora </a>
+                </div>
+            </div>
+
+            <div class="box" data-aos="fade-up">
+                <div class="image">
+                    <img src="images/maldivas.jpg" alt="maldivas" />
+                    <h3><i class="fas fa-map-marker-alt"></i>Maldivas</h3>
+                </div>
+                <div class="content">
+                    <div class="precio">U$ 2150 <span>U$2400</span></div>
+                    <p>
+                        Vani a disfrutar las playas y la tranquilidad de las Maldivas.
+                    </p>
+                    <a href="#" class="btn">Reservar Ahora </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cierre Seccion paquetes -->
+
+    <!-- Inicio Seccion destinos -->
+    <section class="destinos" id="destinos">
+        <h1 class="heading">Destinos y Paquetes</h1>
+
+        <div class="boxContainer" id="contenedorDestinos">
+            <!-- Carga con JS  -->
+        </div>
+    </section>
+    <br /><br />
+    <!-- Cierre seccion destinos -->
+    <!-- Inicio Servicios -->
+
+    <section class="service" id="service">
+        <h1 class="heading">Nuestros <span>Servicios</span></h1>
+        <div class="boxContainer" id="contenedorServicios">
+
+            <!-- Completado con DOM -->
+        </div>
+    </section>
+
+    <!-- Cierre Servicios -->
+
+    <!-- Inicio Contacto -->
+    <section class="contact" id="contact">
+        <h1 class="heading">
+            <span>contactanos</span>
+        </h1>
+        <form action="#" data-aos="zoom-in">
+            <div class="inputBox">
+                <input type="text" placeholder="Nombre" />
+                <input type="email" placeholder="Email" />
+            </div>
+            <div class="inputBox">
+                <input type="tel" placeholder="Numero" />
+                <input type="text" placeholder="Asunto" />
+            </div>
+            <textarea name="" placeholder="Escriba aqui su mensaje" id="" cols="30" rows="10"></textarea>
+            <input type="submit" value="Enviar Mensaje" class="btn" />
+        </form>
+    </section>
+
+    <!-- Fin Contacto -->
+
+    <!-- Inicio Footer -->
+
+    <section class="footer">
+        <div class="boxContainer">
+            <div class="box">
+                <h3>Redes</h3>
+                <a href="https://www.linkedin.com/in/ornella-sereno-alloa-3ba644226/" target="
+                "><i class="fa-brands fa-linkedin"></i> Linkedin</a>
+                <a href="#"><i class="fa-brands fa-facebook"></i> Facebook</a>
+                <a href="#"><i class="fa-brands fa-twitter"></i> Twitter</a>
+            </div>
+            <div class="box">
+                <h3>Direccion</h3>
+                <a href="#"><i class="fa-sharp fa-solid fa-location-dot"></i> Rosario, Argentina</a>
+                <a href="#"><i class="fa-solid fa-phone"></i> Telefono</a>
+                <a href="#"><i class="fa-brands fa-whatsapp"></i> Whatsapp</a>
+            </div>
+        </div>
+
+        <div class="credit">
+            Creado por <span>Ornella Sereno Alloa </span>- 2023 - Roc Viajes
+
+        </div>
+    </section>
+
+    <!-- Cierre Footer -->
+
+    <!-- Script Aos -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"
+        integrity="sha512-A7AYk1fGKX6S2SsHywmPkrnzTZHrgiVT7GcQkLGDe2ev0aWb8zejytzS8wjo7PGEXKqJOrjQ4oORtnimIRZBtw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!-- Script -->
+    <script src="js/script.js"></script>
+
+
+</body>
+
+</html>
