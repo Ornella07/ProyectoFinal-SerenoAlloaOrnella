@@ -21,14 +21,14 @@ let searchForm = document.querySelector('.search-form');
 
 document.querySelector('#search-btn').onclick = () => {
     searchForm.classList.toggle('active');
-    navbar.classList.remove('active');
+    navBar.classList.remove('active');
     loginForm.classList.remove('active');
 
 }
 
 //-- Removemos el active cuando movemos el scroll  -- \\
 window.onscroll = () => {
-    navbar.classList.remove('active');
+    navBar.classList.remove('active');
     loginForm.classList.remove('active');
     searchForm.classList.remove('active');
 }
